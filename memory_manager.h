@@ -10,7 +10,7 @@ typedef struct Frame {
 } Frame;
 
 typedef struct PageTableEntry {
-    size_t virtual_address; // Changed from uint32_t to size_t to accommodate larger addresses
+    size_t virtual_address;
     size_t frame_index;
     int valid;
 } PageTableEntry;
